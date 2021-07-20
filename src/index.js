@@ -1,1 +1,3 @@
-console.log("Hello!");
+import indexPage from "./indexPage";
+
+indexPage();
