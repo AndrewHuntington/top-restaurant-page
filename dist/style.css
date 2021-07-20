@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./pizza-bg.jpg");
+  background-size: cover;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.content {
+  background-color: rgba(236, 98, 44, 0.7);
+  border-radius: 5px;
+  margin: 5rem auto;
+  padding: 2rem;
+  width: 800px;
+}
+
+.main-img {
+  width: 80%;
+}
+
+.hours p {
+  line-height: 0.6rem;
+}
