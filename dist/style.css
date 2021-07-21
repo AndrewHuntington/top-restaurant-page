@@ -9,22 +9,28 @@
   --font-medium: 500;
   --font-bold: 700;
   --font-black: 900;
-  --primary-color-wa: rgba(236, 98, 44, 0.7);
+  --primary-color-wa: rgba(236, 98, 44, 0.8);
   --primary-color-solid: rgb(236, 98, 44);
   --tab-hl-color: rgb(252, 138, 93);
 }
 
-body {
+html {
   background-image: url("./pizza-bg.jpg");
   background-size: cover;
+  min-height: 100vh;
+}
+
+body {
   color: white;
   font-family: "Work Sans", sans-serif;
   font-size: 1.125rem;
   font-weight: var(--font-normal);
+  height: 100%;
   margin: 0;
   text-align: center;
 }
 
+/* START: Navbar styles */
 .navbar {
   display: flex;
   justify-content: center;
@@ -53,6 +59,7 @@ body {
 
   float: left;
   margin: 0 1rem;
+  min-width: 180px;
   padding: 0 3rem;
   height: 100%;
 }
@@ -60,6 +67,14 @@ body {
 .nav-item:hover {
   background-color: var(--tab-hl-color);
 }
+
+.nav-item > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+/* END: Navbar styles */
 
 .content {
   background-color: var(--primary-color-wa);
@@ -95,3 +110,31 @@ body {
 .tab-highlighted {
   background-color: var(--tab-hl-color);
 }
+
+/* START: Menu page styles */
+
+.menu-cat {
+  text-align: left;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.food-item {
+  margin-right: 1rem;
+  font-weight: var(--font-medium);
+}
+
+.spacer {
+  flex-grow: 1;
+  border-bottom: 1px dotted white;
+  position: relative;
+  bottom: 0.5rem;
+}
+
+.price {
+  margin-left: 1rem;
+}
+
+/* END: Menu page styles */

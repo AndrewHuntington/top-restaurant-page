@@ -1,4 +1,5 @@
 export default function () {
+  // create DOM elements
   const content = document.querySelector("#content");
   const headline = document.createElement("h1");
   const mainImg = document.createElement("img");
