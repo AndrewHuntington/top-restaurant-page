@@ -1,6 +1,8 @@
 import indexPage from "./indexPage";
 import menuPage from "./menuPage";
+import contactPage from "./contactPage";
 import navbar from "./navbar";
+import footer from "./footer";
 
 navbar("home");
 indexPage();
