@@ -6,35 +6,32 @@ import footer from "./footer";
 
 navbar("home");
 indexPage();
+footer();
 
-const recreateContentDiv = () => {
+const clearContentDiv = () => {
   let contentDiv = document.querySelector("#content");
   if (contentDiv) {
-    contentDiv.remove();
-    contentDiv = document.createElement("div");
-    contentDiv.id = "content";
-    contentDiv.classList.add("content");
-    document.body.appendChild(contentDiv);
+    contentDiv.innerHTML = "";
   }
 };
 
 const homeTab = document.querySelector("#home");
 homeTab.addEventListener("click", (e) => {
-  recreateContentDiv();
+  clearContentDiv();
   navbar("home");
   indexPage();
 });
 
 const menuTab = document.querySelector("#menu");
 menuTab.addEventListener("click", (e) => {
-  recreateContentDiv();
+  clearContentDiv();
   navbar("menu");
   menuPage();
 });
 
 const contactTab = document.querySelector("#contact");
 contactTab.addEventListener("click", (e) => {
-  recreateContentDiv();
+  clearContentDiv();
   navbar("contact");
   contactPage();
 });
