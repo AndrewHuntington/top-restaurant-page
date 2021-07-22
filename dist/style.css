@@ -16,7 +16,7 @@
 
 html {
   background-image: url("./pizza-bg.jpg");
-  background-attachment: fixed;
+  background-attachment: fixed; /* Use this to keep bg from changing */
   background-size: cover;
   min-height: 100vh;
 }
